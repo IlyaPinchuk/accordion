@@ -1,0 +1,175 @@
+//  .accordion{
+//      background-color: gray;
+//      color: white;
+//      cursor: pointer;
+//      padding: 18px;
+//      width: 100%;
+//      text-align: center;
+//      border: none;
+//      outline: none;
+//      transition: 0.4s;
+
+
+//  }
+
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.accordion {
+    max-width: 800px;
+
+    h2{
+        text-align: center;
+    }
+    .contentBx {
+        position: relative;
+        margin: 10px 20px;
+
+        .label {
+            display: flex;
+
+            position: relative;
+
+            padding: 10px 64px;
+
+            background-color: white;
+
+            color: Black;
+
+            cursor: pointer;
+            
+
+            .wrapper-arrow {
+
+                position: absolute;
+
+                height: 20px;
+
+                width: 20px;
+
+                transform: rotate(270deg);
+
+                right: 196px;
+            }
+
+            
+        }
+        .active {
+            color: #f1b1c4;
+            .wrapper-arrow{
+                transform: none;
+            }
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            display:none;
+
+            // position: relative;
+            // // padding: 10px;
+            // background-color: white;
+            // height: 0;
+            // overflow: hidden;
+            // transition: 0.5s;
+            // overflow-y: auto;
+        }
+        .show{
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // .contentBx {
+// //     position: relative;
+
+// //     margin: 10px 20px;
+
+// //     .label {
+
+// //         position: relative;
+
+// //         padding: 10px;
+
+// //         background-color: black;
+
+// //         color: white;
+
+// //         cursor: pointer;
+
+// //         &::after {
+// //             content: '+';
+
+// //             position: absolute;
+
+// //             top: 50%;
+
+// //             right: 20px;
+
+// //             transform: translateY(-50%);
+
+// //             font-size: 1.5em;
+
+
+// //         }
+// //     }
+
+// //     .content {
+// //         position: relative;
+// //         background: blue;
+
+// //         height: 0;
+
+// //         overflow: hidden;
+
+// //         transition: 0.5s;
+
+// //         overflow-y: auto;
+
+// //     }
+
+// //     .active .contnet {
+// //         height: 150px;
+// //         padding: 10px
+// //     }
+
+// //     .active .label::after {
+// //         content: '';
+// //     }
+// // }

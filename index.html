@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    
+
+
+
+     <div class="accordion">
+         <h2>Categorys</h2>
+        <div class="contentBx">
+            <div class="label">Traveling (9)
+                <span class="wrapper-arrow" >
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                </svg>
+            </span></div>
+            <div class="content">
+                <p>A Picture is Worth A (..)</p>
+                <p>Trip to New York City was (..))</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Photos (28)
+                <span class="wrapper-arrow" >
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="content">
+                <p>A Picture is Worth A (..)</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Lifestyle (4)
+                <span class="wrapper-arrow" >
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="content">
+                <p>A Picture is Worth A (..)</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Inspiration (4)
+                <span class="wrapper-arrow" >
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="content">
+                <p>A Picture is Worth A (..)</p>
+                
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Fashion (28)
+                <span class="wrapper-arrow" >
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="content">
+                <p>A Picture is Worth A (..)</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        let acc = document.getElementsByClassName("label");
+        let i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+
+                this.nextElementSibling.classList.toggle("show");
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
